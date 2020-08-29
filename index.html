@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>First Js</title>
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Click to change the text</h1>
+          <button type="button" class="btn btn-success btn-lg" onclick="changeClick()">Click Here</button>
+          <p class="border" id="p1" style=" margin-top: 20px; ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+      </div>
+    </div>
+    <!-- js link -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+      function changeClick() {
+       document.getElementById("p1").innerHTML = "Hello world!";
+     }
+    </script>
+  </body>
+</html>
